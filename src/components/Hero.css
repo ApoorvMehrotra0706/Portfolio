@@ -134,6 +134,9 @@
   border: 1px solid var(--cyan);
   position: relative;
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
 .btn-secondary::before {

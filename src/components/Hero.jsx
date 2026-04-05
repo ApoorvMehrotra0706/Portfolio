@@ -86,8 +86,8 @@ export default function Hero() {
           <a href="#projects" className="btn-primary" onClick={e => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({behavior:'smooth'}) }}>
             View My Work
           </a>
-          <a href="#contact" className="btn-secondary" onClick={e => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({behavior:'smooth'}) }}>
-            Get In Touch
+          <a href="/Apoorv_Mehrotra_Resume.pdf" download className="btn-secondary">
+            <FiDownload aria-hidden="true" /> Resume
           </a>
         </motion.div>
 
