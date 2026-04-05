@@ -1,3 +1,25 @@
+.nav-skip-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-120%);
+  background: var(--purple);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  z-index: 1100;
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-skip-link:focus {
+  transform: translateX(-50%) translateY(0%);
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
 .navbar {
   position: fixed;
   top: 0;

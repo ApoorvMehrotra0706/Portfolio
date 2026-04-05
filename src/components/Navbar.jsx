@@ -26,6 +26,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
+      <a href="#main-content" className="nav-skip-link">Skip to content</a>
       <div className="nav-inner">
         <div className="nav-logo" onClick={() => scrollTo('hero')}>
           <span className="logo-bracket">&lt;</span>
