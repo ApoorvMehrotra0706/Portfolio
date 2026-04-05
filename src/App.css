@@ -1,0 +1,16 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--glass-border);
+}
