@@ -111,11 +111,11 @@
   resize: vertical;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
   outline: none;
   border-color: var(--purple);
-  box-shadow: 0 0 20px rgba(124,58,237,0.2);
+  box-shadow: 0 0 20px rgba(124,58,237,0.2), 0 0 0 3px rgba(124,58,237,0.15);
   background: rgba(124,58,237,0.05);
 }
 
