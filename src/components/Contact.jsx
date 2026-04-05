@@ -16,7 +16,7 @@ export default function Contact() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">Get In <span className="gradient-text">Touch</span></h2>
-          <p className="section-subtitle">let's work together</p>
+
         </motion.div>
 
         <motion.div

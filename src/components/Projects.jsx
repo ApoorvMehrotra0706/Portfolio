@@ -46,7 +46,7 @@ export default function Projects() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">Featured <span className="gradient-text">Projects</span></h2>
-          <p className="section-subtitle">things i've built</p>
+
         </motion.div>
 
         <div className="projects-grid">

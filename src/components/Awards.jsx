@@ -39,7 +39,7 @@ export default function Awards() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">Awards &amp; <span className="gradient-text">Recognition</span></h2>
-          <p className="section-subtitle">milestones & achievements</p>
+
         </motion.div>
 
         <div className="awards-grid">

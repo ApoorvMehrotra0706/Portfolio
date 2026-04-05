@@ -23,7 +23,7 @@ export default function About() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title"><span className="gradient-text">About</span> Me</h2>
-          <p className="section-subtitle">get to know me</p>
+
         </motion.div>
 
         <div className="about-grid">

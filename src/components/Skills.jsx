@@ -54,7 +54,7 @@ export default function Skills() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">Technical <span className="gradient-text">Skills</span></h2>
-          <p className="section-subtitle">technologies i work with</p>
+
         </motion.div>
 
         <div className="skills-grid">
