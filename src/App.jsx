@@ -22,7 +22,7 @@ function App() {
         <Contact />
       </main>
       <footer className="footer">
-        <p>Designed &amp; Built by <span className="gradient-text">Apoorv Mehrotra</span></p>
+        <p>Designed by <span className="gradient-text">Apoorv Mehrotra</span></p>
       </footer>
     </div>
   )
