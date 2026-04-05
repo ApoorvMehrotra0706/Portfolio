@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <ParticleBackground />
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Skills />

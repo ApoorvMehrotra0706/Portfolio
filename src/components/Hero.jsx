@@ -97,14 +97,14 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          <a href="https://github.com/ApoorvMehrotra0706" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FiGithub />
+          <a href="https://github.com/ApoorvMehrotra0706" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub profile">
+            <FiGithub aria-hidden="true" />
           </a>
-          <a href="https://linkedin.com/in/mehrotraapoorv" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FiLinkedin />
+          <a href="https://linkedin.com/in/mehrotraapoorv" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn profile">
+            <FiLinkedin aria-hidden="true" />
           </a>
-          <a href="mailto:apoorv.mehrotra1991@gmail.com" className="social-link">
-            <FiMail />
+          <a href="mailto:apoorv.mehrotra1991@gmail.com" className="social-link" aria-label="Send email">
+            <FiMail aria-hidden="true" />
           </a>
         </motion.div>
       </div>

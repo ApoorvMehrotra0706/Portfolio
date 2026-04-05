@@ -46,11 +46,11 @@ export default function Contact() {
           </div>
 
           <div className="contact-socials">
-            <a href="https://github.com/ApoorvMehrotra0706" target="_blank" rel="noopener noreferrer" className="contact-social">
-              <FiGithub /> GitHub
+            <a href="https://github.com/ApoorvMehrotra0706" target="_blank" rel="noopener noreferrer" className="contact-social" aria-label="GitHub profile">
+              <FiGithub aria-hidden="true" /> GitHub
             </a>
-            <a href="https://linkedin.com/in/mehrotraapoorv" target="_blank" rel="noopener noreferrer" className="contact-social">
-              <FiLinkedin /> LinkedIn
+            <a href="https://linkedin.com/in/mehrotraapoorv" target="_blank" rel="noopener noreferrer" className="contact-social" aria-label="LinkedIn profile">
+              <FiLinkedin aria-hidden="true" /> LinkedIn
             </a>
           </div>
         </motion.div>

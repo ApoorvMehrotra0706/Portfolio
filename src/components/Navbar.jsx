@@ -52,7 +52,7 @@ export default function Navbar() {
             Hire Me
           </a>
         </div>
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen}>
           <span className={menuOpen ? 'open' : ''}></span>
           <span className={menuOpen ? 'open' : ''}></span>
           <span className={menuOpen ? 'open' : ''}></span>
