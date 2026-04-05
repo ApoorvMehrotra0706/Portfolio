@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiPhone } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMapPin, FiMail } from 'react-icons/fi'
 import './Contact.css'
 
 export default function Contact() {
@@ -16,7 +16,6 @@ export default function Contact() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">Get In <span className="gradient-text">Touch</span></h2>
-
         </motion.div>
 
         <motion.div
@@ -31,18 +30,19 @@ export default function Contact() {
           </p>
 
           <div className="contact-info">
-            <a href="mailto:apoorv.mehrotra1991@gmail.com" className="contact-item">
-              <FiMail className="contact-icon" />
-              <span>apoorv.mehrotra1991@gmail.com</span>
-            </a>
-            <div className="contact-item">
-              <FiPhone className="contact-icon" />
-              <span>+1 (669) 204-5408</span>
-            </div>
             <div className="contact-item">
               <FiMapPin className="contact-icon" />
               <span>San Jose, CA</span>
             </div>
+          </div>
+
+          <div className="contact-actions">
+            <a
+              href="mailto:apoorv.mehrotra1991@gmail.com?subject=Opportunity%20for%20Apoorv&body=Hi%20Apoorv%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect."
+              className="btn-primary contact-email-btn"
+            >
+              <FiMail /> Send me an Email
+            </a>
           </div>
 
           <div className="contact-socials">

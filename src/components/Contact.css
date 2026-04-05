@@ -43,6 +43,16 @@
   flex-shrink: 0;
 }
 
+.contact-actions {
+  margin-bottom: 1.5rem;
+}
+
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .contact-socials {
   display: flex;
   gap: 1rem;
