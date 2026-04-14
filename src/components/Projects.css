@@ -4,6 +4,24 @@
   gap: 1.5rem;
 }
 
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.project-links a:hover {
+  opacity: 1;
+}
+
 .project-card {
   padding: 2rem;
   border-radius: 18px;

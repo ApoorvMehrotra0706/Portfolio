@@ -5,6 +5,25 @@ import './Projects.css'
 
 const projects = [
   {
+    title: 'Smart Trip Planner',
+    period: '2026',
+    description: 'AI-powered multi-city trip planner with interactive maps and real-time streamed itineraries. Next.js frontend, FastAPI backend, HuggingFace AI — fully open source, no API keys required.',
+    tech: ['Next.js', 'FastAPI', 'Python', 'Leaflet', 'HuggingFace', 'SQLite'],
+    color: '#8b5cf6',
+    featured: true,
+    github: 'https://github.com/ApoorvMehrotra0706/smart-trip-planner',
+    demo: 'https://smart-trip-planner-ruddy.vercel.app',
+  },
+  {
+    title: 'AI Code Reviewer',
+    period: '2026',
+    description: 'Local AI-powered git diff reviewer using Ollama — free, offline, no API keys. Streams structured reviews with focus modes (security, performance, style) and pre-push git hook integration.',
+    tech: ['TypeScript', 'Node.js', 'Ollama', 'Git Hooks', 'CLI'],
+    color: '#10b981',
+    featured: true,
+    github: 'https://github.com/ApoorvMehrotra0706/ai-review',
+  },
+  {
     title: 'No-Code Web Dev Platform',
     period: 'Fall 2021',
     description: 'A MERN stack platform for SMBs to bring their business online with UI-level website customization. Deployed on Heroku & AWS handling 50k req/sec.',
@@ -46,22 +65,19 @@ export default function Projects() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">Featured <span className="gradient-text">Projects</span></h2>
-
         </motion.div>
 
         <div className="projects-grid">
           {projects.map((project, i) => (
-            <motion.a
+            <motion.div
               key={project.title}
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
               className={`project-card glass-card ${project.featured ? 'featured' : ''}`}
               style={{ '--proj-color': project.color }}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
               whileHover={{ y: -8 }}
+              onClick={() => window.open(project.demo || project.github, '_blank', 'noopener,noreferrer')}
             >
               <div className="project-top">
                 <div className="project-icon" style={{ color: project.color }}>
@@ -69,7 +85,16 @@ export default function Projects() {
                 </div>
                 <div className="project-top-right">
                   <span className="project-period">{project.period}</span>
-                  <FiGithub className="project-github" style={{ color: project.color }} />
+                  <div className="project-links" onClick={e => e.stopPropagation()}>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
+                      <FiGithub className="project-github" style={{ color: project.color }} />
+                    </a>
+                    {project.demo && (
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="Live demo">
+                        <FiExternalLink className="project-github" style={{ color: project.color }} />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
               <h3 className="project-title" style={{ color: project.color }}>{project.title}</h3>
@@ -79,7 +104,7 @@ export default function Projects() {
                   <span key={t} className="proj-tech-tag">{t}</span>
                 ))}
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>
