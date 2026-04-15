@@ -7,8 +7,8 @@ const projects = [
   {
     title: 'Smart Trip Planner',
     period: '2026',
-    description: 'AI-powered multi-city trip planner with interactive maps and real-time streamed itineraries. Next.js frontend, FastAPI backend, HuggingFace AI — fully open source, no API keys required.',
-    tech: ['Next.js', 'FastAPI', 'Python', 'Leaflet', 'HuggingFace', 'SQLite'],
+    description: 'AI-powered multi-city trip planner with interactive maps and real-time streamed itineraries. Next.js frontend, FastAPI backend, Groq AI (Llama 3) — fully open source with auth, trip saving, and PDF export.',
+    tech: ['Next.js', 'FastAPI', 'Python', 'Leaflet', 'Groq', 'Turso'],
     color: '#8b5cf6',
     featured: true,
     github: 'https://github.com/ApoorvMehrotra0706/smart-trip-planner',
