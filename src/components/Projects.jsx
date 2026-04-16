@@ -5,6 +5,16 @@ import './Projects.css'
 
 const projects = [
   {
+    title: 'Medialib',
+    period: '2026',
+    description: 'Personal media library to track movies, TV shows, books, games, and anime. Next.js frontend, FastAPI backend, security-question-based auth, and a rich detail modal with ratings, reviews, and notes.',
+    tech: ['Next.js', 'FastAPI', 'Python', 'Turso', 'NextAuth', 'Vercel'],
+    color: '#a855f7',
+    featured: true,
+    github: 'https://github.com/ApoorvMehrotra0706/medialib',
+    demo: 'https://medialib-delta.vercel.app',
+  },
+  {
     title: 'Smart Trip Planner',
     period: '2026',
     description: 'AI-powered multi-city trip planner with interactive maps and real-time streamed itineraries. Next.js frontend, FastAPI backend, Groq AI (Llama 3) — fully open source with auth, trip saving, and PDF export.',
